@@ -8,7 +8,8 @@ The most recent compilation of the windows distributive can be found [here](http
 
 ## Quick installation on Maxwell Cluster
 The [code](https://github.com/lorcat/Dioptas-Lambda-Pipeline/blob/main/maxwell_installer/install_dioptas.py) provided inside the folder **[maxwell_installer](https://github.com/lorcat/Dioptas-Lambda-Pipeline/tree/main/maxwell_installer)** can be downloaded and executed via
-
+    
+    wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas.py
 	python3 install_dioptas.py
 
 
