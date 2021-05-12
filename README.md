@@ -16,7 +16,7 @@ A more difficult way would be:
 
     cd ~/Downloads
     git clone https://github.com/lorcat/Dioptas-Lambda-Pipeline
-    cd Dioptas-Lambda-Pipeline
+    cd Dioptas-Lambda-Pipeline/maxwell_installer
     python3 install_dioptas.py
 
 It will setup user links to the /gpfs data and the Dioptas on the virtual desktop of the user run.
