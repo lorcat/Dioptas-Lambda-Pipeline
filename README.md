@@ -12,7 +12,6 @@ The [code](https://github.com/lorcat/Dioptas-Lambda-Pipeline/blob/main/maxwell_i
     wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas.py
 	python3 install_dioptas.py
 
-
 A more difficult way would be:
 
     cd ~/Downloads
