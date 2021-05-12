@@ -13,7 +13,7 @@ Type=Application
 Terminal=false
 Exec=/usr/bin/bash -i /asap3/fs-sc/gpfs/common/scdd01/conda_env/batchfit/bin/activate_batchfit.sh
 Name=P02.2 batch fit
-Icon=/asap3/fs-sc/gpfs/common/scdd01/conda_env/batchfit/bin/batch_fit.png"
+Icon=/asap3/fs-sc/gpfs/common/scdd01/conda_env/batchfit/bin/batch_fit.png
 Categories=Science;
     """
 
@@ -22,8 +22,8 @@ Categories=Science;
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/usr/bin/bash -i /asap3/fs-sc/gpfs/common/scdd01/conda_env/batchfit/bin/activate_batchfit.sh
-Name=P02.2 batch fit
+Exec=/usr/bin/bash -i /asap3/fs-sc/gpfs/common/scdd01/conda_env/batchfit/bin/activate_dioptas.sh
+Name=P02.2 dioptas
 Icon=/asap3/fs-sc/gpfs/common/scdd01/conda_env/batchfit/bin/dioptas_pipeline.png
 Categories=Science;
         """
