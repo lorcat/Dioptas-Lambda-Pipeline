@@ -33,3 +33,6 @@ This dioptas version is developed by Mikhail Karnevsky. The code can be installe
 	dioptas
 
 These are the channels which will be updated on a faster pace than the Windows static builds.
+
+## Recent version of modded Diopas
+The most recent version of the modded Dioptas compatible with NEXUS files and integration of a batch of images ccan be found [here](https://www.dropbox.com/sh/dw0n2g29d16301w/AACEbcfFX7-Ie6E2edHT_J1Ua/windows?dl=0&lst=&preview=Dioptas_Win64_0.5.1-05%2B54.gb0311845.zip&subfolder_nav_tracking=1).
