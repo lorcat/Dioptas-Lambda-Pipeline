@@ -27,5 +27,8 @@ It will setup user links to the /gpfs data and the Dioptas on the virtual deskto
 
 ## Quick installation on Maxwell Cluster - precompiled Dioptas from Clemens Prescher
 
+[Clemens Prescher ](http://www.clemensprescher.com/programs/dioptas) made the high pressure community a huge favor and presented an updated version of his  Dioptas, precompiled for different OS.
+Within the operations of scientific computing group of DESY (FS-SC) we placed a copy on Maxwell cluster. The following code helps with installation of a Desktop icon on Maxwell cluster.
+
     wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas_cprescher.py
 	python3 install_dioptas_cprescher.py
