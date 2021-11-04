@@ -25,7 +25,7 @@ A more difficult way would be:
 
 It will setup user links to the /gpfs data and the Dioptas on the virtual desktop of the user run.
 
-## Quick installation on Maxwell Cluster - precompiled Dioptas from Clemens
+## Quick installation on Maxwell Cluster - precompiled Dioptas from Clemens Prescher
 
     wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas_cprescher.py
 	python3 install_dioptas_cprescher.py
