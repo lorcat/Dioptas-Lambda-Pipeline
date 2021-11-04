@@ -62,6 +62,16 @@ Categories=Science;
                 os.makedirs(base_dir)
 
             fn = os.path.join(base_dir, link)
+
+            breate = True
+            if os.path.exists(fn) and (os.path.isfile(fn) or os.path.islink(fn)):
+                print("Deleting an old link ({})".format(fn))
+                self.delete_link(fn)
+            elif os.path.exists(fn) and os.path.isdir(fn):
+                print("Error: ({}) exists and it is not a file/link".format(fn))
+                bcreate = False
+
+            fn = os.path.join(base_dir, link)
             print("Creating a desktop link ({})..".format(fn))
             with open(fn, "w") as fh:
                 fh.write(content)
@@ -76,9 +86,25 @@ Categories=Science;
         """
 
         fn = os.path.join(os.getenv(self.KEY_USERHOME), 'Desktop', 'P02.2_data')
+
+        if os.path.exists(fn) and (os.path.isfile(fn) or os.path.islink(fn)):
+            print("Deleting an old link ({})".format(fn))
+            self.delete_link(fn)
+
         start = "/asap3/petra3/gpfs/p02.2"
         print("Creating a data link ({} -> {})..".format(start, fn))
         subprocess.run(["ln", "-s", start, fn])
+
+    def delete_link(self, link_path):
+        """
+        Deletes a link path
+        :param link_path:
+        :return:
+        """
+        try:
+            os.unlink(link_path)
+        except IsADirectoryError:
+            pass
 
 
 def main():
