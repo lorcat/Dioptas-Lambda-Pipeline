@@ -11,17 +11,9 @@ The [code](https://github.com/lorcat/Dioptas-Lambda-Pipeline/blob/main/maxwell_i
     
     module load anaconda3/5.2
     conda init bash
-    wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas.py
+    curl -O https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas.py
 	python3 install_dioptas.py
 
-A more difficult way would be:
-
-    module load anaconda3/5.2
-    conda init bash
-    cd ~/Downloads
-    git clone https://github.com/lorcat/Dioptas-Lambda-Pipeline
-    cd Dioptas-Lambda-Pipeline/maxwell_installer
-    python3 install_dioptas.py
 
 It will setup user links to the /gpfs data and the Dioptas on the virtual desktop of the user run.
 
@@ -30,5 +22,5 @@ It will setup user links to the /gpfs data and the Dioptas on the virtual deskto
 [Clemens Prescher ](http://www.clemensprescher.com/programs/dioptas) made the high pressure community a huge favor and presented an updated version of his  Dioptas, precompiled for different OS.
 Within the operations of scientific computing group of DESY (FS-SC) we placed a copy on Maxwell cluster. The following code helps with installation of a Desktop icon on Maxwell cluster.
 
-    wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas_cprescher.py
+    curl -O https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas_cprescher.py
 	python3 install_dioptas_cprescher.py
