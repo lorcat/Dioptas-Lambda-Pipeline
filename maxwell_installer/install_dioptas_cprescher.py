@@ -49,10 +49,10 @@ Categories=Science;
             fn = os.path.join(base_dir, link)
 
             breate = True
-            if os.path.exists(fn) and os.path.isfile(fn):
+            if os.path.exists(fn) and (os.path.isfile(fn) or os.path.islink(fn)):
                 print("Deleting an old link ({})".format(fn))
                 self.delete_link(fn)
-            elif os.path.exists(fn):
+            elif os.path.exists(fn) and os.path.isdir(fn):
                 print("Error: ({}) exists and it is not a file/link".format(fn))
                 bcreate = False
 
