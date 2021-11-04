@@ -27,7 +27,5 @@ It will setup user links to the /gpfs data and the Dioptas on the virtual deskto
 
 ## Quick installation on Maxwell Cluster - precompiled Dioptas from Clemens
 
-    module load anaconda3/5.2
-    conda init bash
-    wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas.py
-	python3 install_dioptas.py
+    wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas_cprescher.py
+	python3 install_dioptas_cprescher.py
