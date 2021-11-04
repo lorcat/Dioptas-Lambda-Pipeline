@@ -13,7 +13,7 @@ Type=Application
 Terminal=false
 Exec=/asap3/fs-sc/gpfs/common/scdd01/dioptas/dioptas-0.5.3a/Dioptas
 Name=Original Dioptas
-Icon=/asap3/fs-sc/gpfs/common/scdd01/dioptas/Dioptas.ico
+Icon=/asap3/fs-sc/gpfs/common/scdd01/dioptas/dioptas-0.5.3a/dioptas/resources/icons/icon.png
 Categories=Science;
         """
 
