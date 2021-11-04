@@ -60,7 +60,6 @@ Categories=Science;
                 print("Creating a desktop link ({})..".format(fn))
                 with open(fn, "w") as fh:
                     fh.write(content)
-                subprocess.run(["chmod", "-x", fn])
 
 
         except IOError as e:
