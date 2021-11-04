@@ -6,7 +6,7 @@ The documentation  presented below provides a user with code installation instru
 
 The most recent compilation of the windows distributive can be found [here](https://github.com/karnevskiy/Dioptas/releases/tag/0.5.1-05).
 
-## Quick installation on Maxwell Cluster
+## Quick installation on Maxwell Cluster - code from Mikhail Karnevsky
 The [code](https://github.com/lorcat/Dioptas-Lambda-Pipeline/blob/main/maxwell_installer/install_dioptas.py) provided inside the folder **[maxwell_installer](https://github.com/lorcat/Dioptas-Lambda-Pipeline/tree/main/maxwell_installer)** can be downloaded and executed via
     
     module load anaconda3/5.2
@@ -25,14 +25,9 @@ A more difficult way would be:
 
 It will setup user links to the /gpfs data and the Dioptas on the virtual desktop of the user run.
 
-## Installation of special Dioptas version via conda
-This dioptas version is developed by Mikhail Karnevsky. The code can be installed via [Anaconda](https://www.anaconda.com/). At the moment installation channels for Windows and Linux are available. The following lines indicate code which should be run on the command line.
+## Quick installation on Maxwell Cluster - precompiled Dioptas from Clemens
 
-	conda create -n dioptas_lambda_pipeline integration_pipeline -c karnevskiy -c cprescher --yes
-	conda activate dioptas_lambda_pipeline
-	dioptas
-
-These are the channels which will be updated on a faster pace than the Windows static builds.
-
-## Recent version of modded Diopas
-The most recent version of the modded Dioptas compatible with NEXUS files and integration of a batch of images ccan be found [here](https://www.dropbox.com/sh/dw0n2g29d16301w/AACEbcfFX7-Ie6E2edHT_J1Ua/windows?dl=0&lst=&preview=Dioptas_Win64_0.5.1-05%2B54.gb0311845.zip&subfolder_nav_tracking=1).
+    module load anaconda3/5.2
+    conda init bash
+    wget https://raw.githubusercontent.com/lorcat/Dioptas-Lambda-Pipeline/main/maxwell_installer/install_dioptas.py
+	python3 install_dioptas.py
