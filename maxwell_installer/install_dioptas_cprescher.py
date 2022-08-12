@@ -11,9 +11,9 @@ class Installer(object):
 Version=0.5.3
 Type=Application
 Terminal=false
-Exec=/asap3/fs-sc/gpfs/common/scdd01/dioptas/dioptas-0.5.3a/Dioptas
+Exec=/asap3/fs-sc/gpfs/common/scdd01/dioptas/latest/Dioptas
 Name=Original Dioptas
-Icon=/asap3/fs-sc/gpfs/common/scdd01/dioptas/dioptas-0.5.3a/dioptas/resources/icons/icon.png
+Icon=/asap3/fs-sc/gpfs/common/scdd01/dioptas/latest/dioptas/resources/icons/icon.png
 Categories=Science;
         """
 
